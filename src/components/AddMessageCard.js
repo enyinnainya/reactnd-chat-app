@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-class AddMessage extends Component {
+class AddMessageCard extends Component {
   state = {
     message: '',
   };
@@ -49,4 +49,4 @@ class AddMessage extends Component {
   }
 }
 
-export default AddMessage;
+export default AddMessageCard;

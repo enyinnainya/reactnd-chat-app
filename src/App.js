@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import ChatWindow from './components/ChatWindow';
+import ChatWindowCard from './components/ChatWindowCard';
 
 
 class App extends Component {
@@ -34,7 +34,7 @@ class App extends Component {
         </header>
         <div className="container">
           {this.users.map(user => (
-            <ChatWindow
+            <ChatWindowCard
               key={user.username}
               user={user}
               messages={messages}

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import AddMessage from './AddMessage';
-import MessageHistory from './MessageHistory';
+import AddMessageCard from './AddMessageCard';
+import MessageHistoryCard from './MessageHistoryCard';
 import PropTypes from 'prop-types';
 
 
-class ChatWindow extends Component {
+class ChatWindowCard extends Component {
   static propTypes = {
     sendMessage: PropTypes.func.isRequired,
     user: PropTypes.object.isRequired,
@@ -18,11 +18,11 @@ class ChatWindow extends Component {
       <div className="chat-window">
         <h2>Super Awesome Chat</h2>
         <div className="name sender">{user.username}</div>
-        <MessageHistory messages={messages} user={user} />
-        <AddMessage sendMessage={sendMessage} user={user} />
+        <MessageHistoryCard messages={messages} user={user} />
+        <AddMessageCard sendMessage={sendMessage} user={user} />
       </div>
     );
   }
 }
 
-export default ChatWindow;
+export default ChatWindowCard;
