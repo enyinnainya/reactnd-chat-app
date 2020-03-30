@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
-class MessageHistory extends Component {
+class MessageHistoryCard extends Component {
   
   static propTypes = {
     messages: PropTypes.array.isRequired,
@@ -28,4 +28,4 @@ class MessageHistory extends Component {
 }
 
 
-export default MessageHistory;
+export default MessageHistoryCard;
